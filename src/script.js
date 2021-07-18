@@ -80,8 +80,8 @@ function restoreExploreHeader() {
     const detailsButton = document.createElement("button");
     const detailsSpan = document.createElement("span");
 
-    const detailsHeaderText =  document.createTextNode("Explore");
-    const detailsSpanText =  document.createTextNode("More Details");
+    const detailsHeaderText = document.createTextNode("Explore");
+    const detailsSpanText = document.createTextNode("More Details");
 
     details.setAttribute("id", "details-container");
     detailsButton.setAttribute("id", "plus-button");
