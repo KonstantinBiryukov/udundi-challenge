@@ -47,7 +47,9 @@ function addExploreCard() {
     exploreCardText.classList.add("card-text");
     exploreCardButton.classList.add("btn", "btn-explore-card");
 
-    exploreCard.setAttribute("data-aos", "zoom-out-down");
+    exploreCard.setAttribute("data-aos", "zoom-in-right");
+    exploreCard.setAttribute("data-aos-easing", "ease-in-sine");
+    exploreCard.setAttribute("data-aos-offset", "500");
     exploreCard.setAttribute("data-aos-duration", "750");
 
     exploreCardCloseButton.setAttribute("aria-label", "Close");
@@ -95,7 +97,7 @@ function restoreExploreHeader() {
     detailsHeader.classList.add("text-header");
     detailsSpan.classList.add("more-details")
 
-    details.setAttribute("data-aos", "zoom-in");
+    details.setAttribute("data-aos", "zoom-out-left");
     details.setAttribute("data-aos-duration", "750");
 
     detailsHeader.appendChild(detailsHeaderText);
