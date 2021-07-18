@@ -1,8 +1,12 @@
 "use strict";
+
 document.addEventListener("DOMContentLoaded", initPage);
+AOS.init({
+    startEvent: 'DOMContentLoaded',
+    easing: 'ease'
+});
 
 function initPage() {
-    AOS.init();
     plusButtonEventListener();
 }
 
@@ -44,6 +48,8 @@ function addExploreCard() {
     exploreCardButton.classList.add("btn", "btn-explore-card");
 
     exploreCard.setAttribute("data-aos", "zoom-out-down");
+    exploreCard.setAttribute("data-aos-duration", "750");
+
     exploreCardCloseButton.setAttribute("aria-label", "Close");
     exploreCardCloseSpan.setAttribute("aria-hidden", "true");
 
@@ -90,6 +96,7 @@ function restoreExploreHeader() {
     detailsSpan.classList.add("more-details")
 
     details.setAttribute("data-aos", "zoom-in");
+    details.setAttribute("data-aos-duration", "750");
 
     detailsHeader.appendChild(detailsHeaderText);
     detailsSpan.appendChild(detailsSpanText);

@@ -4,7 +4,6 @@
     height: 100vh;
 }
 
-
 #background-rectangle {
     width: 26%;
     height: 100%;
@@ -174,5 +173,4 @@
     .more-details {
         font-size: 25px;
     }
-
 }
